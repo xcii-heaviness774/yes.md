@@ -1,0 +1,24 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "YES.md — PUA says NO, YES says YES. Safety gates, evidence rules, anti-slack detection, and ripple-check. Makes AI do things RIGHT with encouragement, not pressure. Available in English, 中文, 日本語.",
+  "author": {
+    "name": "sstklen",
+    "url": "https://github.com/sstklen"
+  },
+  "homepage": "https://github.com/sstklen/yes.md",
+  "repository": "https://github.com/sstklen/yes.md",
+  "license": "MIT",
+  "keywords": [
+    "yes",
+    "governance",
+    "safety",
+    "debugging",
+    "evidence-based",
+    "anti-slack",
+    "verification",
+    "quality",
+    "encouragement",
+    "multilingual"
+  ]
+}
