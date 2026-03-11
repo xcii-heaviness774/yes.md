@@ -14,17 +14,18 @@ Your CLAUDE.md has one layer. AI reads it, then **chooses** whether to follow it
 
 YES.md has six layers. AI has to get past all six to cut corners.
 
-```
-Layer 1  AI.MD         Format — AI actually understands your rules
-Layer 2  Trigger       Precision — activates at exactly the right moment
-Layer 3  Hooks         Machine-enforced — scripts block dangerous commands,
-                       remind ripple-check, verify deploys (AI can't skip these)
-Layer 4  Anti-Slack    Behavior trap — 7 lazy patterns auto-detected
-Layer 5  Gates         Hard stop — no backup = no edit, no test = no "done"
-Layer 6  Memory        Learning — mistakes get recorded, never repeated
-```
+| Layer | What | How | Who Enforces |
+|:-----:|------|-----|:------------:|
+| **1** | **Format** — AI actually understands your rules | [AI.MD](https://github.com/sstklen/ai-md) converts prose to structured-label format | Format |
+| **2** | **Trigger** — activates at exactly the right moment | 20+ specific trigger conditions in SKILL.md description | Skill engine |
+| **3** | **Hooks** — blocks dangerous commands, reminds checks | Scripts run automatically before/after AI actions | **Machine** |
+| **4** | **Anti-Slack** — 7 lazy patterns caught and corrected | Deflecting, guessing, spinning, surface-fix, empty questions... | AI self-correction |
+| **5** | **Gates** — no backup = no edit, no test = no "done" | Hard stop rules that halt progress until requirements are met | AI self-discipline |
+| **6** | **Memory** — mistakes get recorded, never repeated | Error logs + knowledge base persist across sessions | External storage |
 
-**Layer 3 is the key.** Everything else relies on AI self-discipline. Hooks are **scripts that run automatically** — the AI cannot bypass them even if it wants to.
+> **Layer 3 is the key.** Everything else relies on AI self-discipline. Hooks are **scripts that run automatically** — the AI cannot bypass them even if it wants to.
+
+Most tools give you Layer 4 or 5 alone. That's why they don't work. **Six layers together is why YES.md works.**
 
 ## The Problem
 
