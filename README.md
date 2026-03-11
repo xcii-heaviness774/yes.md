@@ -8,6 +8,24 @@ A Claude Code skill that makes AI **safe, evidence-based, and thorough** — wit
 
 **🌐 [English](skills/yes/SKILL.md) | [中文](skills/yes-zh/SKILL.md) | [日本語](skills/yes-ja/SKILL.md)**
 
+## Why Your CLAUDE.md Doesn't Work
+
+Your CLAUDE.md has one layer. AI reads it, then **chooses** whether to follow it.
+
+YES.md has six layers. AI has to get past all six to cut corners.
+
+```
+Layer 1  AI.MD         Format — AI actually understands your rules
+Layer 2  Trigger       Precision — activates at exactly the right moment
+Layer 3  Hooks         Machine-enforced — scripts block dangerous commands,
+                       remind ripple-check, verify deploys (AI can't skip these)
+Layer 4  Anti-Slack    Behavior trap — 7 lazy patterns auto-detected
+Layer 5  Gates         Hard stop — no backup = no edit, no test = no "done"
+Layer 6  Memory        Learning — mistakes get recorded, never repeated
+```
+
+**Layer 3 is the key.** Everything else relies on AI self-discipline. Hooks are **scripts that run automatically** — the AI cannot bypass them even if it wants to.
+
 ## The Problem
 
 AI coding assistants have seven bad habits:
@@ -35,6 +53,18 @@ AI coding assistants have seven bad habits:
 | **Safety Gates** | Backup before editing. Check blast radius. Verify after changes. Pre-flight before deploy. |
 | **Evidence Rules** | No guessing. No "probably." Every claim needs data, line numbers, or tool output. |
 | **Ripple Awareness** | After every fix: check same pattern elsewhere, check upstream/downstream, check edge cases. |
+
+### Hooks (Machine-Enforced)
+
+Rules rely on AI self-discipline. Hooks don't. They are **scripts that run automatically** before and after AI actions.
+
+| Hook | When | What It Does |
+|------|------|-------------|
+| `pre-bash-guard.sh` | Before any Bash command | Blocks `rm -rf`, `git reset --hard`, `DROP TABLE`, and other destructive commands |
+| `post-edit-check.sh` | After any Write/Edit | Reminds AI to run ripple-check before saying "done" |
+| `post-deploy-health.sh` | After deploy commands | Reminds AI to verify containers, endpoints, and logs |
+
+The AI cannot skip these. That's the point.
 
 ### Anti-Slack Detection
 

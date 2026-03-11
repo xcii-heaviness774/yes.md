@@ -1,7 +1,7 @@
 {
   "name": "yes",
-  "version": "1.0.0",
-  "description": "YES.md — PUA says NO, YES says YES. Safety gates, evidence rules, anti-slack detection, and ripple-check. Makes AI do things RIGHT with encouragement, not pressure. Available in English, 中文, 日本語.",
+  "version": "1.1.0",
+  "description": "YES.md — PUA says NO, YES says YES. 6-layer AI governance: format → trigger → hooks → anti-slack → gates → memory. Makes AI do things RIGHT with encouragement, not pressure. Available in English, 中文, 日本語.",
   "author": {
     "name": "sstklen",
     "url": "https://github.com/sstklen"
@@ -19,6 +19,40 @@
     "verification",
     "quality",
     "encouragement",
+    "hooks",
     "multilingual"
-  ]
+  ],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/pre-bash-guard.sh \"$TOOL_INPUT\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/post-edit-check.sh \"$TOOL_INPUT\""
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/post-deploy-health.sh \"$TOOL_INPUT\""
+          }
+        ]
+      }
+    ]
+  }
 }
