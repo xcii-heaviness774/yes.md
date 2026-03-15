@@ -1,3 +1,5 @@
+[中文版](docs/README.zh.md) · [日本語版](docs/README.ja.md)
+
 # YES.md
 
 > PUA says NO. YES says YES.
